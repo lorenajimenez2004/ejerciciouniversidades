@@ -19,6 +19,10 @@ public class ServicioUniversidades {
     public void registrar(Universidad universidad){
         this.repositorioUniversidad.save(universidad);
     }
+    public void actualizar(Universidad universidad){
+        this.repositorioUniversidad.save(universidad);
+    }
+
     public List<Universidad> consultarTodos(){
         return this.repositorioUniversidad.findAll();
     }
